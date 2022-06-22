@@ -20,27 +20,45 @@
     // Regular
 
     // Interpolated
-
+    console.log('Hello, I am a %s string', 'caramba');
+    let caramba = 888; 
+    console.log(`Hello, I am an interpolated element: ${caramba}`);
     // Styled
+    console.log('I am a %cstring', 'font-size: 20px; background: pink')
 
     // warning!
-
+    console.warn('ay caramba!!!')
     // Error :|
-
+    console.error('holy shmoly batman')
     // Info
-
+    console.info('fun fact'); 
     // Testing
-
+    console.assert(1 === 3, 'no sir, incorrect');
     // clearing
-
+    console.clear();
     // Viewing DOM Elements
-
+    //console.log(p); 
+    //console.dir(p); 
     // Grouping together
-
+    dogs.forEach(dog=>{
+      console.groupCollapsed(`${dog.name}`);
+      console.log(`The dog's name is ${dog.name}`);
+      console.log(`The dog's age is ${dog.age}`);
+      console.groupEnd(`${dog.name}`);
+    })
     // counting
+    console.count('jojo');
+    console.count('jojo');
+    console.count('jojo');
+    console.count('jojo');
+    console.count('tyre boy')
 
     // timing
+    console.time('fetching data'); 
+    console.timeEnd('fetching data'); 
 
+    //table
+    console.table(dogs); 
   </script>
 </body>
 </html>
